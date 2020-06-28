@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>漢気旅行</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="漢気旅行会計管理アプリ">
+<link rel="stylesheet" href="css/slide.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/openclose.js"></script>
+</head>
+
+<body>
+
+<!--小さな端末用（480px以下端末）ブロック-->
+<div id="sh">
+
+<!--小さな端末用ロゴ-->
+<p id="logo"><a href="index.html"><img src="images/title_s.png" alt="TITLE LOGO"></a></p>
+
+<!--小さな端末用メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">漢気REGISTRATION</a></li>
+<li><a href="ranking.html">RANKING</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/sh-->
+
+<div id="container">
+
+<div id="main">
+
+<section class="box">
+
+<aside id="mainimg">
+<img src="images/image1.jpg" alt="" id="slide1"/>
+<img src="images/image2.jpg" alt="" id="slide2"/>
+<img src="images/image3.jpg" alt="" id="slide3"/>
+</aside>
+
+</section>
+<!--/box-->
+
+<section class="box">
+
+<h2>漢気REGISTRATION</h2>
+
+<h3>支払い金額登録</h3>
+<p>入力後、登録ボタンを押してください</p>
+
+<form action="#" method="post">
+<p>漢名：XXXXXXXXXX<br>
+<p>支払い場所：<br>
+<input type="text" name="place"></p>
+<p>金額：<br>
+<input type="text" name="payment">円</p>
+<p>勝ち手：<br>
+<label><input type="radio" name="sign" value="rock">グー　</label>
+<label><input type="radio" name="sign" value="scissors">チョキ　</label>
+<label><input type="radio" name="sign" value="paper">パー　</label>
+<p><input type="submit" value="登録" disabled="disabled" ></p>
+</form>
+
+</section>
+<!--/box-->
+
+</div>
+<!--/main-->
+
+<div id="sub">
+
+<!--大きな端末用（481px以上端末）ロゴ-->
+<p id="logo"><a href="index.html"><img src="images/title.png" alt="TITLE LOGO"></a></p>
+
+<!--大きな端末用（481px以上端末）メニュー-->
+<nav id="menubar">
+<ul>
+<li><a href="index.html">漢気REGISTRATION</a></li>
+<li><a href="ranking.html">RANKING</a></li>
+</ul>
+</nav>
+
+</div>
+<!--/sub-->
+
+</div>
+<!--/container-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">Sample Site</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a></span>
+</footer>
+
+<!--お知らせ欄の開閉処理条件　480px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 480) {
+	open_close("newinfo_hdr", "newinfo");
+}
+</script>
+
+<!--メニューの３本バー-->
+<div id="menubar_hdr" class="close"><span></span><span></span><span></span></div>
+<!--メニューの開閉処理条件設定　480px以下-->
+<script type="text/javascript">
+if (OCwindowWidth() <= 480) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+</body>
+</html>
